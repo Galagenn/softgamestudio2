@@ -1,0 +1,22 @@
+@import "./base/reset";
+
+.wrapper {
+   min-height: 100svh;
+   display: flex;
+   flex-direction: column;
+   overflow: hidden;
+   @supports (overflow: clip) {
+      overflow: clip;
+   }
+   > main {
+      flex: 1 1 auto;
+   }
+}
+
+@import "base";
+
+[class*="__container"] {
+   max-width: toRem(1354);
+   margin-inline: auto;
+   padding-inline: toRem(15);
+}

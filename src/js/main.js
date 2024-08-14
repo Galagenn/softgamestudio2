@@ -1,5 +1,6 @@
 import "../scss/style.scss";
 import { formValidate } from "./files/forms/forms";
+import "./files/swiper";
 
 class Functions {
    _slideUp(target, duration = 500, showmore = 0) {

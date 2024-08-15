@@ -1,5 +1,6 @@
 .partners {
    @include fluid-property("padding-top", 114, 57);
+   @include fluid-property("padding-bottom", 168, 30);
    // .partners__container
    &__container {
    }

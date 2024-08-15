@@ -1,0 +1,39 @@
+.youtube {
+   @include fluid-property("padding-top", 63, 30);
+   @include fluid-property("padding-bottom", 114, 57);
+   // .youtube__container
+   &__container {
+   }
+   // .youtube__title
+   &__title {
+      &:not(:last-child) {
+         @include fluid-property("margin-bottom", 84, 44);
+      }
+   }
+   // .youtube__videos
+   &__videos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(toRem(400), 1fr));
+      column-gap: toRem(50);
+      @include fluid-property("row-gap", 62, 20);
+      @media (max-width: toEm(430)) {
+         grid-template-columns: repeat(auto-fit, minmax(toRem(290), 1fr));
+      }
+   }
+   // .youtube__video
+   &__video {
+      border-radius: toRem(25);
+      overflow: hidden;
+      transition: box-shadow 0.3s;
+      iframe {
+         display: block;
+         width: 100%;
+         aspect-ratio: 2 / 1;
+      }
+      @media (any-hover: hover) {
+         &:hover {
+            box-shadow: 0 0 toRem(20) #fff;
+         }
+      }
+   }
+}

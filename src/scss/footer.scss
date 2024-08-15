@@ -1,0 +1,46 @@
+.footer {
+   @include fluid-property("padding-top", 168, 30);
+   padding-bottom: toRem(54);
+   // .footer__container
+   &__container {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: toRem(20);
+   }
+   // .footer__phone
+   &__phone {
+      text-decoration: none;
+      color: inherit;
+      @media (any-hover: hover) {
+         &:hover {
+            text-decoration: underline;
+         }
+      }
+      @media (max-width: toEm(479.98)) {
+         font-size: toRem(18);
+      }
+   }
+   // .footer__copy
+   &__copy {
+      @media (max-width: toEm(479.98)) {
+         font-size: toRem(18);
+      }
+   }
+}
+.soc1als {
+   display: flex;
+   align-items: center;
+   gap: toRem(20);
+   // .soc1als__item
+   &__item {
+   }
+   // .soc1als__link
+   &__link {
+   }
+   // .soc1als__icon
+   &__icon {
+      @include square(40);
+   }
+}

@@ -1,0 +1,42 @@
+.partners {
+   @include fluid-property("padding-top", 114, 57);
+   // .partners__container
+   &__container {
+   }
+   // .partners__title
+   &__title {
+      &:not(:last-child) {
+         @include fluid-property("margin-bottom", 85, 40);
+      }
+   }
+   // .partners__slider
+   &__slider {
+   }
+   // .partners__wrapper
+   &__wrapper {
+   }
+   // .partners__slide
+   &__slide {
+      
+   }
+   // .partners__body
+   &__body {
+      max-width: toRem(400);
+      aspect-ratio: 2 / 1;
+      overflow: hidden;
+      border-radius: toRem(25);
+      background-color: #d9d9d9;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+   }
+   // .partners__image
+   &__image {
+      flex: 0 1 toRem(300);
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+   }
+}

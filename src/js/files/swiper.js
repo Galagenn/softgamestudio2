@@ -52,7 +52,44 @@ function initSliders() {
             1476: {
                slidesPerView: 2.5,
                spaceBetween: 230,
-            }
+            },
+         },
+      });
+   }
+   if (document.querySelector(".partners__slider")) {
+      new Swiper(".partners__slider", {
+         modules: [Autoplay],
+         observer: true,
+         observeParents: true,
+         slidesPerView: 3,
+         spaceBetween: 45,
+         speed: 800,
+         loop: true,
+         autoplay: {
+            delay: 2000,
+            disableOnInteraction: false,
+         },
+         breakpoints: {
+            320: {
+               slidesPerView: 1,
+               spaceBetween: 15,
+            },
+            600: {
+               slidesPerView: 2,
+               spaceBetween: 25,
+            },
+            768: {
+               slidesPerView: 2.2,
+               spaceBetween: 30,
+            },
+            992: {
+               slidesPerView: 2.5,
+               spaceBetween: 35,
+            },
+            1024: {
+               slidesPerView: 3,
+               spaceBetween: 45,
+            },
          },
       });
    }

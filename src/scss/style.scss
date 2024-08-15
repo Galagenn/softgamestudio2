@@ -5,6 +5,7 @@
    min-height: 100svh;
    display: flex;
    flex-direction: column;
+   background: url("images/bg.jpeg") 0 0 / cover no-repeat;
    overflow: hidden;
    @supports (overflow: clip) {
       overflow: clip;
@@ -28,10 +29,8 @@ body {
    font-size: toRem(24);
    line-height: 120.833333%; /* 29/24 */
    color: #fff;
-   background-image: url("images/bg.jpeg");
-   background-repeat: no-repeat;
-   background-size: cover;
 }
 
 // Blocks
 @import "./blocks/services";
+@import "./blocks/projects";

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Michroma&family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Michroma&family=Montserrat&display=swap");
 @import "./base/reset";
 
 .wrapper {
@@ -27,10 +27,11 @@ body {
    font-family: "Montserrat", sans-serif;
    font-size: toRem(24);
    line-height: 120.833333%; /* 29/24 */
-   color: #fff9f9;
+   color: #fff;
    background-image: url("images/bg.jpeg");
    background-repeat: no-repeat;
    background-size: cover;
 }
 
 // Blocks
+@import "./blocks/services";

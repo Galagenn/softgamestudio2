@@ -1,5 +1,5 @@
 .title {
-   font-size: toRem(36);
+   @include fluid-property("font-size", 36, 26);
    line-height: 122.222222%; /* 44/36 */
    text-transform: uppercase;
    font-weight: 400;

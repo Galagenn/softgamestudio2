@@ -15,6 +15,7 @@
 }
 
 @import "base";
+@import "common";
 
 [class*="__container"] {
    max-width: toRem(1354);

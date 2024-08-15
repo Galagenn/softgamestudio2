@@ -45,6 +45,7 @@
    }
    // .item-projects__text
    &__text {
+      @include fluid-property("font-size", 24, 16);
       color: #fff9f9;
    }
 }

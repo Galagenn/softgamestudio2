@@ -68,6 +68,16 @@
          font-size: toRem(14);
       }
    }
+   // .slide-services__link
+   &__link {
+      text-decoration: none;
+      color: inherit;
+      @media (any-hover: hover) {
+         &:hover {
+            text-decoration: underline;
+         }
+      }
+   }
    // .slide-services__price
    &__price {
       font-size: toRem(20);
